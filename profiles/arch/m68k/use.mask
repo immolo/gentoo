@@ -4,6 +4,11 @@
 # Unmask the flag which corresponds to ARCH.
 -m68k
 
+# Ian Jordan <immoloism@gmail.com> (2025-06-22)
+# llvm-runtimes/openmp failes with an unsupported arch error.
+# Disabling USE flag that pulls the package in.
+openmp
+
 # Andreas Sturmlechner <asturm@gentoo.org> (2025-06-12)
 # x11-drivers/xf86-input-wacom is not keyworded here
 input_devices_wacom
