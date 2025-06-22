@@ -1,6 +1,30 @@
 # Copyright 2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# Ian Jordan <immoloism@gmail.com> (2025-06-22)
+# Since we are using -maligned-int by default,
+# clang now compiles on m68k so removing USE flag masks related.
+-clang
+-asan
+-cfi
+-ctx-profile
+-dfsan
+-gwp-asan
+-hwasan
+-libfuzzer
+-lsan
+-memprof
+-msan
+-nsan
+-orc
+-profile
+-rtsan
+-safestack
+-scudo
+-tsan
+-ubsan
+-xray
+
 # Andreas K. Hüttel <dilfridge@gentoo.org> (2025-06-02)
 # Since we are using -maligned-int by default,
 # Python 3.13 works here. Not sure about 3.14 yet, we'll find out.
